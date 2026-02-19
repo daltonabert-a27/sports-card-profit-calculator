@@ -25,7 +25,7 @@ class DealAnalyzerTab(ttk.Frame):
 
     def _build_ui(self):
         # Top section: cost basis inputs
-        top = ttk.LabelFrame(self, text="  Card Cost Basis  ", padding=15)
+        top = ttk.Labelframe(self, text="  Card Cost Basis  ", padding=15)
         top.pack(fill=X, pady=(0, 10))
 
         row1 = ttk.Frame(top)
@@ -71,7 +71,7 @@ class DealAnalyzerTab(ttk.Frame):
         ).pack(side=LEFT)
 
         # Middle: offers section
-        offers_frame = ttk.LabelFrame(self, text="  Offers to Compare  ", padding=15)
+        offers_frame = ttk.Labelframe(self, text="  Offers to Compare  ", padding=15)
         offers_frame.pack(fill=X, pady=(0, 10))
 
         # Offer header
@@ -107,7 +107,7 @@ class DealAnalyzerTab(ttk.Frame):
         ).pack(side=LEFT)
 
         # Bottom: results table
-        self.results_frame = ttk.LabelFrame(self, text="  Analysis Results  ", padding=15)
+        self.results_frame = ttk.Labelframe(self, text="  Analysis Results  ", padding=15)
         self.results_frame.pack(fill=BOTH, expand=True)
 
         self.results_tree = ttk.Treeview(

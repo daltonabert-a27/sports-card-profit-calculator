@@ -32,7 +32,7 @@ class SoldCompsTab(ttk.Frame):
 
     def _build_ui(self):
         # Search bar
-        search_frame = ttk.LabelFrame(self, text="  Search  ", padding=10)
+        search_frame = ttk.Labelframe(self, text="  Search  ", padding=10)
         search_frame.pack(fill=X, pady=(0, 10))
 
         input_row = ttk.Frame(search_frame)
@@ -60,7 +60,7 @@ class SoldCompsTab(ttk.Frame):
         ).pack(side=LEFT)
 
         # Stats panel
-        stats_frame = ttk.LabelFrame(self, text="  Comp Statistics  ", padding=10)
+        stats_frame = ttk.Labelframe(self, text="  Comp Statistics  ", padding=10)
         stats_frame.pack(fill=X, pady=(0, 10))
 
         stats_row = ttk.Frame(stats_frame)
@@ -83,7 +83,7 @@ class SoldCompsTab(ttk.Frame):
         ).pack(side=RIGHT)
 
         # Results table
-        results_frame = ttk.LabelFrame(self, text="  Results  ", padding=10)
+        results_frame = ttk.Labelframe(self, text="  Results  ", padding=10)
         results_frame.pack(fill=BOTH, expand=True)
 
         self.tree = ttk.Treeview(

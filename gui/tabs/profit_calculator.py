@@ -32,10 +32,10 @@ class ProfitCalculatorTab(ttk.Frame):
         paned = ttk.Frame(self)
         paned.pack(fill=BOTH, expand=True)
 
-        left = ttk.LabelFrame(paned, text="  Inputs  ", padding=15)
+        left = ttk.Labelframe(paned, text="  Inputs  ", padding=15)
         left.pack(side=LEFT, fill=BOTH, expand=True, padx=(0, 5))
 
-        right = ttk.LabelFrame(paned, text="  Results  ", padding=15)
+        right = ttk.Labelframe(paned, text="  Results  ", padding=15)
         right.pack(side=RIGHT, fill=BOTH, expand=True, padx=(5, 0))
 
         self._build_inputs(left)

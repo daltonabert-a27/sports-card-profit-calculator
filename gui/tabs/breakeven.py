@@ -38,7 +38,7 @@ class BreakevenTab(ttk.Frame):
         top.pack(fill=X, pady=(0, 10))
 
         # Left: inputs
-        left = ttk.LabelFrame(top, text="  Card Details  ", padding=15)
+        left = ttk.Labelframe(top, text="  Card Details  ", padding=15)
         left.pack(side=LEFT, fill=BOTH, expand=True, padx=(0, 5))
 
         self.raw_cost = CurrencyEntry(left, "Raw Card Cost Basis:")
@@ -81,7 +81,7 @@ class BreakevenTab(ttk.Frame):
         ).pack(fill=X, pady=(10, 0))
 
         # Right: grading services to compare
-        right = ttk.LabelFrame(top, text="  Grading Services to Compare  ", padding=15)
+        right = ttk.Labelframe(top, text="  Grading Services to Compare  ", padding=15)
         right.pack(side=RIGHT, fill=BOTH, expand=True, padx=(5, 0))
 
         # Select all / none
@@ -109,7 +109,7 @@ class BreakevenTab(ttk.Frame):
             self.grading_check_vars.append((var, gs))
 
         # Results section
-        results_frame = ttk.LabelFrame(self, text="  Results  ", padding=10)
+        results_frame = ttk.Labelframe(self, text="  Results  ", padding=10)
         results_frame.pack(fill=BOTH, expand=True)
 
         # Treeview
@@ -141,7 +141,7 @@ class BreakevenTab(ttk.Frame):
 
         # Chart area (if matplotlib available)
         if HAS_MATPLOTLIB:
-            self.chart_frame = ttk.LabelFrame(self, text="  Profit Comparison Chart  ", padding=5)
+            self.chart_frame = ttk.Labelframe(self, text="  Profit Comparison Chart  ", padding=5)
             self.chart_frame.pack(fill=BOTH, expand=True, pady=(10, 0))
             self.fig = Figure(figsize=(8, 2.5), dpi=80)
             self.fig.patch.set_facecolor("#303030")

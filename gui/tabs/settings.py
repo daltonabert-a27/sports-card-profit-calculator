@@ -29,7 +29,7 @@ class SettingsTab(ttk.Frame):
         container = scroll_frame
 
         # --- eBay API Section ---
-        api_frame = ttk.LabelFrame(container, text="  eBay API Credentials  ", padding=15)
+        api_frame = ttk.Labelframe(container, text="  eBay API Credentials  ", padding=15)
         api_frame.pack(fill=X, pady=(0, 10), padx=5)
 
         ttk.Label(api_frame, text="Get credentials at developer.ebay.com", bootstyle="secondary").pack(anchor=W, pady=(0, 5))
@@ -56,7 +56,7 @@ class SettingsTab(ttk.Frame):
         ).pack(side=LEFT)
 
         # --- Fee Defaults Section ---
-        fee_frame = ttk.LabelFrame(container, text="  Default Fee Rates  ", padding=15)
+        fee_frame = ttk.Labelframe(container, text="  Default Fee Rates  ", padding=15)
         fee_frame.pack(fill=X, pady=(0, 10), padx=5)
 
         self.fvf_rate = self._make_setting_row(fee_frame, "FVF Rate (%):", 13.25)
@@ -65,7 +65,7 @@ class SettingsTab(ttk.Frame):
         self.intl_rate = self._make_setting_row(fee_frame, "International Fee (%):", 1.65)
 
         # --- Tax Section ---
-        tax_frame = ttk.LabelFrame(container, text="  Sales Tax  ", padding=15)
+        tax_frame = ttk.Labelframe(container, text="  Sales Tax  ", padding=15)
         tax_frame.pack(fill=X, pady=(0, 10), padx=5)
 
         self.tax_rate = self._make_setting_row(tax_frame, "Default Tax Rate (%):", 6.25)
