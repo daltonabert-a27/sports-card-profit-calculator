@@ -44,7 +44,7 @@ class ROITrackerTab(ttk.Frame):
         self._build_action_bar()
 
         # Main area: paned window with inventory table (left) and chart (right)
-        paned = ttk.PanedWindow(self, orient=HORIZONTAL)
+        paned = ttk.Panedwindow(self, orient=HORIZONTAL)
         paned.pack(fill=BOTH, expand=True, pady=(5, 0))
 
         self._build_inventory_table(paned)
