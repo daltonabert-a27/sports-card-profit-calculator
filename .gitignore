@@ -10,8 +10,7 @@ dist/
 build/
 
 # Database and exports
-data/sports_cards.db
-data/exports/
+data/
 
 # IDE
 .vscode/
